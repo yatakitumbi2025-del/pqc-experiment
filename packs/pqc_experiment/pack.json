@@ -5,8 +5,8 @@
   "description": "Hands-on post-quantum measurement: benchmarks, key and signature size comparisons, known-answer tests, and runnable experiments on constrained hardware.",
   "author": "your-name",
   "license": "MIT",
-  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
-  "embedding_dimension": 384,
+  "embedding_model": "jina-embeddings-v3",
+  "embedding_dimension": 512,
   "routing": {
     "keywords": [
       "benchmark",
