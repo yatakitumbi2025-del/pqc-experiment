@@ -18,7 +18,7 @@
         "measurement"
       ],
       "size_bytes": 14692,
-      "manifest": "packs/programming/pack.json"
+      "manifest": "packs/pqc_experiment/pack.json"
     }
   ]
 }
