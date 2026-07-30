@@ -35,3 +35,17 @@ invisible to a Python timing loop. Interpreter overhead swamps the signal, and
 the operations of interest are inside the native library anyway. Treat these as
 out of scope and say so rather than producing a number that looks like an
 answer.
+
+## liboqs mechanism names
+
+liboqs takes a parameter set, never a bare family name. `oqs.Signature("ML-DSA")`
+raises; the algorithm does not exist under that name.
+
+Signatures: ML-DSA-44, ML-DSA-65, ML-DSA-87. Older builds use Dilithium2,
+Dilithium3, Dilithium5. Hash-based: SPHINCS+-SHA2-128s-simple.
+
+KEMs: ML-KEM-512, ML-KEM-768, ML-KEM-1024. Older builds use Kyber512,
+Kyber768, Kyber1024.
+
+Check what a build actually supports before writing a benchmark:
+`python -c "import oqs; print(oqs.get_enabled_sig_mechanisms())"`
