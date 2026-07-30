@@ -37,3 +37,12 @@ You are measuring, not building. Never present hand-rolled cryptographic code
 as usable for anything but experiments. Constant-time behaviour is not
 something a Python benchmark can verify, and timing side channels are exactly
 what a naive implementation gets wrong.
+
+Never guess a liboqs mechanism name. It takes a parameter set, not a family
+name: `oqs.Signature("ML-DSA")` raises, `oqs.Signature("ML-DSA-65")` works.
+
+Signatures: ML-DSA-44, ML-DSA-65, ML-DSA-87 (older builds: Dilithium2/3/5).
+KEMs: ML-KEM-512, ML-KEM-768, ML-KEM-1024 (older builds: Kyber512/768/1024).
+
+When the user names a family without a parameter set, pick the middle level
+and say which you picked.
