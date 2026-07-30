@@ -1,0 +1,53 @@
+{
+  "id": "pqc_experiment",
+  "name": "PQC Experiment",
+  "version": "0.1.0",
+  "description": "Hands-on post-quantum measurement: benchmarks, key and signature size comparisons, known-answer tests, and runnable experiments on constrained hardware.",
+  "author": "your-name",
+  "license": "MIT",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "routing": {
+    "keywords": [
+      "benchmark",
+      "measure",
+      "timing",
+      "profile",
+      "milliseconds",
+      "microseconds",
+      "liboqs",
+      "oqs",
+      "pqclean",
+      "known-answer test",
+      "test vector",
+      "kat",
+      "run the numbers",
+      "keygen speed",
+      "signing rate",
+      "memory usage",
+      "experiment",
+      "how long",
+      "how fast",
+      "per second",
+      "latency",
+      "iterations",
+      "median",
+      "p95",
+      "warm-up",
+      "runtime"
+    ],
+    "description_for_router": "Benchmark ML-KEM-768 key generation and report the timings. Measure how long ML-DSA-65 takes to sign a thousand messages. Write a script that generates a keypair and times it. Time encapsulation and decapsulation on my phone. Check my implementation against the known-answer test vectors. How many signatures per second can this hardware manage? How much memory does SLH-DSA signing use at runtime? Profile where the time goes and show me the median and the p95. Run it a thousand iterations and tell me if it got slower."
+  },
+  "files": {
+    "prompt": "prompt.md",
+    "examples": "examples.md",
+    "knowledge": [
+      "knowledge/benchmarking-method.md",
+      "knowledge/tooling.md"
+    ],
+    "vectors": "vectors.json"
+  },
+  "tools": [],
+  "created": "2026-07-29",
+  "updated": "2026-07-29"
+}

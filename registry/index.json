@@ -1,0 +1,24 @@
+{
+  "registry_version": "1.0",
+  "name": "Modular AI Domain Registry",
+  "description": "Lightweight, swappable domain packs for a modular coding AI. The core runs locally; packs are fetched on demand.",
+  "embedding_model": "jina-embeddings-v3",
+  "embedding_dimension": 512,
+  "updated": "2026-07-21",
+  "packs": [
+    {
+      "id": "pqc_experiment",
+      "name": "PQC Experiment",
+      "description": "Hands-on post-quantum measurement: benchmarks, key and signature size comparisons, known-answer tests, and runnable experiments on constrained hardware.",
+      "version": "0.1.0",
+      "tags": [
+        "cryptography",
+        "post-quantum",
+        "benchmarking",
+        "measurement"
+      ],
+      "size_bytes": 14692,
+      "manifest": "packs/programming/pack.json"
+    }
+  ]
+}
